@@ -1,0 +1,28 @@
+{
+  "name": "zhieq/laravel-gee-test",
+  "description": "zhieq group gee test",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhieq",
+      "email": "developer@zhieq.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "5.*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZhiEq\\GeeTest\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ZhiEq\\GeeTest\\GeeTestServiceProvider"
+      ]
+    }
+  }
+}
