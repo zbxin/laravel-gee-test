@@ -71,14 +71,15 @@ class GeeTest
     public function verifyCaptcha($statusKey, $challenge, $validate, $secCode)
     {
         try {
-            if (!$captchaInfo = Cache::get($statusKey)) {
+            if (!$captchaInfo = cache()->get($statusKey)) {
                 throw new CaptchaTimeoutException();
             }
+            $captchaInfo = json_decode($captchaInfo, true);
             if ($captchaInfo['status'] === 1) {
                 unset($captchaInfo['status']);
-                return $this->gtLib->success_validate($challenge, $validate, $secCode, $captchaInfo);
+                return $this->gtLib->success_validate($challenge, $validate, $secCode, $captchaInfo) === 1;
             }
-            return $this->gtLib->fail_validate($challenge, $validate, $secCode);
+            return $this->gtLib->fail_validate($challenge, $validate, $secCode) === 1;
         } catch (\Exception $e) {
             throw new CaptchaTimeoutException();
         }
