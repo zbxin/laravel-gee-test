@@ -71,7 +71,7 @@ class GeeTest
     public function verifyCaptcha($statusKey, $challenge, $validate, $secCode)
     {
         try {
-            if (!$captchaInfo = cache()->get($statusKey)) {
+            if (!$captchaInfo = Cache::get($statusKey)) {
                 throw new CaptchaTimeoutException();
             }
             $captchaInfo = json_decode($captchaInfo, true);
