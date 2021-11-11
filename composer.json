@@ -1,12 +1,12 @@
 {
-  "name": "zhieq/laravel-gee-test",
-  "description": "zhieq group gee test",
+  "name": "zbxin/laravel-gee-test",
+  "description": "zbxin group gee test",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "zhieq",
-      "email": "developer@zhieq.com"
+      "name": "zbxin",
+      "email": "developer@zbxin.com"
     }
   ],
   "require": {
@@ -15,13 +15,13 @@
   },
   "autoload": {
     "psr-4": {
-      "ZhiEq\\GeeTest\\": "src"
+      "zbxin\\GeeTest\\": "src"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "ZhiEq\\GeeTest\\GeeTestServiceProvider"
+        "zbxin\\GeeTest\\GeeTestServiceProvider"
       ]
     }
   }
