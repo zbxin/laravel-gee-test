@@ -1,6 +1,6 @@
 <?php
 
-namespace ZhiEq\GeeTest\Exceptions;
+namespace Zbxin\GeeTest\Exceptions;
 
 use Throwable;
 

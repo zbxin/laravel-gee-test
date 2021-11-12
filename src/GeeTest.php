@@ -1,12 +1,12 @@
 <?php
 
-namespace ZhiEq\GeeTest;
+namespace Zbxin\GeeTest;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Request;
-use ZhiEq\GeeTest\Exceptions\CaptchaTimeoutException;
-use ZhiEq\GeeTest\Library\GeeTestLib;
+use Zbxin\GeeTest\Exceptions\CaptchaTimeoutException;
+use Zbxin\GeeTest\Library\GeeTestLib;
 
 class GeeTest
 {

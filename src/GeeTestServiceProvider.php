@@ -1,6 +1,6 @@
 <?php
 
-namespace ZhiEq\GeeTest;
+namespace Zbxin\GeeTest;
 
 use Illuminate\Support\ServiceProvider;
 
